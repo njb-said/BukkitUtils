@@ -58,8 +58,6 @@ public class PlayerUtils {
      * Call the update method
      * <p>
      * This used to be deprecated in bukkit which gave this method a purpose
-     *
-     * @author CoderCake
      */
     public static void update(Player player) {
         player.updateInventory();
