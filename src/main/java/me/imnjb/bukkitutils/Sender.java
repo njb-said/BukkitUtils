@@ -47,7 +47,7 @@ public class Sender {
      * @param message the message
      */
     public static void tell(CommandSender obj, String message) {
-        if(obj == null) {
+        if(obj == null || message == null) {
             return;
         }
         obj.sendMessage(color("&7" + message));
