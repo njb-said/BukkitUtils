@@ -63,4 +63,24 @@ public class PlayerUtils {
         player.updateInventory();
     }
 
+    public static void update(CustomPlayer player) {
+        update(player.getPlayer());
+    }
+
+    public static void reset(CustomPlayer player) {
+        reset(player.getPlayer());
+    }
+
+    public static void resetXP(CustomPlayer player) {
+        resetXP(player.getPlayer());
+    }
+
+    public static void heal(CustomPlayer player) {
+        heal(player.getPlayer());
+    }
+
+    public static void clearInventory(CustomPlayer player) {
+        clearInventory(player.getPlayer());
+    }
+
 }

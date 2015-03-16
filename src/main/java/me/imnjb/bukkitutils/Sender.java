@@ -53,6 +53,12 @@ public class Sender {
         obj.sendMessage(color("&7" + message));
     }
 
+    public static void tell(CustomPlayer player, String message) {
+        if(player != null) {
+            tell(player.getPlayer(), message);
+        }
+    }
+
     /**
      * Output a message to the console
      *
