@@ -50,16 +50,16 @@ public class SizeCalculator {
     }
 
     /**
-     * Fill an inventory with a list of items,
+     * Populate an inventory with a list of items,
      * spaced out in a pretty way
      *
      * <p> If list is bigger than 5 nothing special
      * will happen
      *
-     * @param inv inventory to fill
-     * @param items items to fill with
+     * @param inv inventory to populate
+     * @param items items to populate with
      */
-    public static void fillInventory(Inventory inv, List<ItemStack> items) {
+    public static void populateInventory(Inventory inv, List<ItemStack> items) {
         Sizes size = Sizes.getFromInt(items.size());
 
         if(size == Sizes.MORE) {
