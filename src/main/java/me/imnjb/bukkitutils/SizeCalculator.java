@@ -56,11 +56,12 @@ public class SizeCalculator {
      * <p> If list is bigger than 5 nothing special
      * will happen
      *
-     * @param inv
-     * @param items
+     * @param inv inventory to fill
+     * @param items items to fill with
      */
     public static void fillInventory(Inventory inv, List<ItemStack> items) {
         Sizes size = Sizes.getFromInt(items.size());
+
         if(size == Sizes.MORE) {
             for(ItemStack item : items) {
                 inv.addItem(item);
