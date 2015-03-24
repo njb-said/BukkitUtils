@@ -22,7 +22,7 @@ Maven Configuration:
         <dependency>
             <groupId>me.imnjb.bukkitutils</groupId>
             <artifactId>BukkitUtils</artifactId>
-            <version>1.0.2</version>
+            <version>1.0.3</version>
         </dependency>
     </dependencies>
 ```
