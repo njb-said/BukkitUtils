@@ -27,4 +27,4 @@ Maven Configuration:
     </dependencies>
 ```
 
-It is suggested to [shade](http://maven.apache.org/plugins/maven-shade-plugin/) this into your plugin as this is **NOT** a plugin.
+It is suggested to [shade](http://maven.apache.org/plugins/maven-shade-plugin/) this into your plugin/project as this is **NOT** a plugin.
