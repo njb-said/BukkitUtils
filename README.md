@@ -11,20 +11,20 @@ There is a maven repository at [build.mc-api.net/plugin/repository/everything](h
 Maven Configuration:
 
 ```xml
-    <repositories>
-        <repository>
-            <id>mcapi</id>
-            <url>http://build.mc-api.net/plugin/repository/everything/</url>
-        </repository>
-    </repositories>
-    
-    <dependencies>
-        <dependency>
-            <groupId>me.imnjb.bukkitutils</groupId>
-            <artifactId>BukkitUtils</artifactId>
-            <version>1.0.3</version>
-        </dependency>
-    </dependencies>
+<repositories>
+    <repository>
+        <id>mcapi</id>
+        <url>http://build.mc-api.net/plugin/repository/everything/</url>
+    </repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>me.imnjb.bukkitutils</groupId>
+        <artifactId>BukkitUtils</artifactId>
+        <version>1.0.3</version>
+    </dependency>
+</dependencies>
 ```
 
 It is suggested to [shade](http://maven.apache.org/plugins/maven-shade-plugin/) this into your plugin/project as this is **NOT** a plugin.
