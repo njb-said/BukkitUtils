@@ -13,6 +13,7 @@ import org.bukkit.command.CommandSender;
  */
 public class Sender {
 
+    public static String PREFIX = "";
     public static final String CHAR = String.valueOf(ChatColor.COLOR_CHAR);
 
     /**
@@ -50,7 +51,7 @@ public class Sender {
         if(obj == null || message == null) {
             return;
         }
-        obj.sendMessage(color("&7" + message));
+        obj.sendMessage(color("&7" + PREFIX + message));
     }
 
     public static void tell(CustomPlayer player, String message) {
@@ -71,9 +72,9 @@ public class Sender {
         }
 
         if(Bukkit.getConsoleSender() == null) {
-            System.out.println(ChatColor.stripColor(color(str)));
+            System.out.println(ChatColor.stripColor(color(PREFIX + str)));
         } else {
-            Bukkit.getConsoleSender().sendMessage(color(str));
+            Bukkit.getConsoleSender().sendMessage(color(PREFIX + str));
         }
     }
 
