@@ -2,10 +2,15 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>me.imnjb.bukkitutils</groupId>
     <artifactId>BukkitUtils</artifactId>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <name>BukkitUtils</name>
 
     <repositories>
+        <repository>
+            <id>spigot</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+        </repository>
+
         <repository>
             <id>oss.sonatype.org</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
@@ -16,17 +21,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.8</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/spigot-api-1.8.jar</systemPath>
-        </dependency>
-
-        <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot</artifactId>
-            <version>1.8</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/spigot-1.8.jar</systemPath>
+            <version>1.8.3-R0.1-SNAPSHOT</version>
         </dependency>
 
         <dependency>
